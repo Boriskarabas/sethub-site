@@ -1,0 +1,74 @@
+# Decap CMS — visual admin for the listings site
+# Nikolai edits everything at /admin : photos, texts, prices, sets, fees, rules,
+# accordions, add-ons, attendee tiers. No code.
+
+backend:
+  name: git-gateway
+  branch: main
+  # Requires Netlify Identity + Git Gateway enabled on the deployed site.
+
+local_backend: true
+
+media_folder: "site/static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "sets"
+    label: "Sets (листинги)"
+    files:
+      - name: "set-hub"
+        label: "Set Hub"
+        file: "site/content/sets/set-hub.json"
+        fields: &set_fields
+          - { label: "Название", name: "title", widget: "string" }
+          - { label: "Подзаголовок", name: "tagline", widget: "string" }
+          - { label: "Адрес", name: "location", widget: "string" }
+          - { label: "Вместимость (чел.)", name: "capacity", widget: "number", value_type: "int" }
+          - { label: "Площадь (sqft)", name: "sqft", widget: "number", value_type: "int" }
+          - { label: "Минимум часов", name: "min_hours", widget: "number", value_type: "int" }
+          - { label: "Цена от ($/час)", name: "price_min", widget: "number", value_type: "int" }
+          - { label: "Цена до ($/час)", name: "price_max", widget: "number", value_type: "int", required: false }
+          - { label: "Скидка: часов от", name: "discount_hours", widget: "number", value_type: "int", required: false }
+          - { label: "Скидка: %", name: "discount_pct", widget: "number", value_type: "int", required: false }
+          - { label: "Часы работы", name: "bookable_hours", widget: "string" }
+          - { label: "Видео (URL, необязательно)", name: "video_url", widget: "string", required: false }
+          - { label: "Галерея", name: "gallery", widget: "list", field: { label: "Фото", name: "image", widget: "image" } }
+          - { label: "Описание (What we offer)", name: "description", widget: "markdown" }
+          - label: "Аккордеоны (Parking, Lighting…)"
+            name: "accordions"
+            widget: "list"
+            fields:
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Текст", name: "body", widget: "markdown" }
+          - label: "Адд-оны"
+            name: "addons"
+            widget: "list"
+            fields:
+              - { label: "Название", name: "name", widget: "string" }
+              - { label: "Цена ($)", name: "price", widget: "number" }
+              - { label: "Примечание к цене", name: "price_note", widget: "string", default: "flat fee" }
+              - { label: "Фото", name: "image", widget: "image" }
+          - label: "Тарифы по гостям"
+            name: "attendee_tiers"
+            widget: "list"
+            fields:
+              - { label: "Название", name: "label", widget: "string" }
+              - { label: "Множитель цены", name: "multiplier", widget: "number", default: 1 }
+          - { label: "Сеты / зоны", name: "sets", widget: "list", field: { label: "Название", name: "set", widget: "string" } }
+          - { label: "Удобства", name: "amenities", widget: "list", field: { label: "Удобство", name: "amenity", widget: "string" } }
+          - label: "Дополнительные сборы"
+            name: "fees"
+            widget: "list"
+            fields:
+              - { label: "Название", name: "label", widget: "string" }
+              - { label: "Сумма", name: "amount", widget: "string" }
+          - { label: "Правила", name: "rules", widget: "list", field: { label: "Правило", name: "rule", widget: "string" } }
+          - { label: "Отмена брони", name: "cancellation_note", widget: "text", required: false }
+      - name: "car-set"
+        label: "Car Set"
+        file: "site/content/sets/car-set.json"
+        fields: *set_fields
+      - name: "roof-top"
+        label: "RoofTop"
+        file: "site/content/sets/roof-top.json"
+        fields: *set_fields

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Set Hub — 16 Multi Set Video/Photo Studio</title>
+  <meta name="description" content="16 multi-set video/photo studio in DTLA. 16500 sq ft. Book your shoot." />
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Set hub</a>
+      <nav class="nav">
+        <div class="sets-drop" id="setsDrop">
+          <button id="setsBtn" aria-haspopup="true">THE SETS <img src="static/img/figma/arrow-caret-down.svg" alt="" /></button>
+          <div class="drop" id="setsMenu" role="menu"></div>
+        </div>
+        <a href="set.html?set=set-hub" class="hide-m">BOOKING</a>
+        <a href="static/admin/" class="hide-m">LOG IN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <h1 class="mega">16 multi set<br />video<span class="slash">/</span>photo<br />studio</h1>
+      <div class="mosaic">
+        <div class="mosaic-top">
+          <figure class="m-a"><img src="static/img/figma/mosaic-6.jpg" alt="Production at Set Hub" /></figure>
+          <figure class="m-b"><img src="static/img/figma/mosaic-7.jpg" alt="Production at Set Hub" /></figure>
+          <figure class="m-c"><img src="static/img/figma/mosaic-1.jpg" alt="Production at Set Hub" /></figure>
+          <figure class="m-d"><img src="static/img/figma/mosaic-2.jpg" alt="Production at Set Hub" /></figure>
+          <figure class="m-e"><img src="static/img/figma/mosaic-5.jpg" alt="Production at Set Hub" /></figure>
+          <figure class="m-f"><img src="static/img/figma/mosaic-8.jpg" alt="Production at Set Hub" /></figure>
+        </div>
+        <div class="mosaic-bottom">
+          <figure><img src="static/img/figma/mosaic-4.jpg" alt="Production at Set Hub" /></figure>
+          <figure><img src="static/img/figma/mosaic-3.jpg" alt="Production at Set Hub" /></figure>
+        </div>
+      </div>
+      <div class="infobar">
+        <span>DTLA</span><span>16500 sq ft</span><button id="watchGallery" type="button">watch gallery</button>
+      </div>
+      <button class="book-pill" id="bookPill"><span>BOOK</span><img src="static/img/figma/arrow-up-right.svg" alt="" /></button>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Photo viewer">
+    <button class="x" id="lbClose" aria-label="Close">×</button>
+    <button class="prev" id="lbPrev" aria-label="Previous">‹</button>
+    <img id="lbImg" src="" alt="Enlarged photo" />
+    <button class="next" id="lbNext" aria-label="Next">›</button>
+  </div>
+
+  <script src="static/js/site.js"></script>
+</body>
+</html>

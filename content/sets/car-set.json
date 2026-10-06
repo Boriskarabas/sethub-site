@@ -1,0 +1,81 @@
+{
+  "amenities": [
+    "Real vintage Mercedes picture car",
+    "Multiple shooting angles",
+    "Staging space with makeup and fitting area",
+    "Power and space for your own equipment",
+    "On-set technical assistance (with Full Package)"
+  ],
+  "bookable_hours": "Open 24 hours, 7 days a week",
+  "capacity": 10,
+  "description": "## A fast, affordable set for driving scenes\n\nShoot inside a **real vintage Mercedes** on the 2nd floor of the studio — no picture-car rental, no vehicle delivery, no permits, no traffic, no weather problems.\n\nPerfect for music videos, commercials, short films, dialogue scenes, fashion content, reels and photoshoots.\n\n### Self-service — $69/hr\nThe base booking includes full access to the Car Set studio, the Mercedes, multiple shooting angles, and staging space with makeup and fitting. Bring your own lights, projectors, screens, cameras and crew — build the setup your way and only pay for the studio and the car.\n\n### Full Car Process Package — +$99/hr\nWant everything ready when you walk in? The full package adds:\n- Two projectors + two projection screens\n- Green screens\n- Basic lighting and grip equipment\n- Access to the background playback library\n- Full setup for your shoot\n\nProject moving city streets, highways, tunnels or night driving — or your own custom footage — and create the scene directly in camera. The Mercedes remains stationary.\n\nChoose **Self-Service** if you have your own equipment. Choose the **Full Package** if you want to arrive with camera and talent and start shooting.",
+  "discount_note": "",
+  "fees": [],
+  "gallery": [
+    "/uploads/car-set/car-set-01.jpg",
+    "/uploads/car-set/car-set-02.jpg",
+    "/uploads/car-set/car-set-03.jpg",
+    "/uploads/car-set/car-set-04.jpg",
+    "/uploads/car-set/car-set-05.jpg",
+    "/uploads/car-set/car-set-06.jpg",
+    "/uploads/car-set/car-set-07.jpg",
+    "/uploads/car-set/car-set-08.jpg"
+  ],
+  "instant_book": true,
+  "location": "125 E 11th St, Los Angeles, CA 90015",
+  "min_hours": 2,
+  "price_max": 168,
+  "price_min": 69,
+  "price_note": "$69/hr self-service · +$99/hr Full Car Process Package",
+  "price_unit": "hr",
+  "rules": [
+    "The Mercedes remains stationary at all times.",
+    "Bring your own lights/cameras for self-service, or book the Full Package.",
+    "Booking time includes setup and cleanup."
+  ],
+  "sets": [
+    "Vintage Mercedes driving set",
+    "Projection driving-scene setup (with Full Package)"
+  ],
+  "sqft": 0,
+  "sqft_note": "2nd floor studio space",
+  "tagline": "In-Camera Driving Scene Stage",
+  "title": "Car Set",
+  "video_url": "",
+  "discount_hours": 8,
+  "discount_pct": 5,
+  "attendee_tiers": [
+    {
+      "label": "1-10 people",
+      "multiplier": 1
+    }
+  ],
+  "accordions": [
+    {
+      "title": "Parking",
+      "body": "The parking lot is at 1023 S Los Angeles St, Los Angeles ($10 all day). Metered street parking on Main, Olympic, 11th and Los Angeles St. Arrive a little early — finding our door takes a minute the first time."
+    },
+    {
+      "title": "Space access",
+      "body": "The car set is on the 2nd floor of the studio. Freight elevator on site. Open 24/7."
+    },
+    {
+      "title": "Host rules",
+      "body": "The Mercedes remains stationary at all times. Booking time includes setup and cleanup. No smoking, no alcohol."
+    }
+  ],
+  "addons": [
+    {
+      "name": "Full Car Process Package",
+      "price": 99,
+      "price_note": "per hour",
+      "image": "static/img/figma/class-addon-3.jpg"
+    },
+    {
+      "name": "Aputure 300dMII With Stand and Softbox",
+      "price": 30,
+      "price_note": "flat fee",
+      "image": "static/img/figma/class-addon-1.jpg"
+    }
+  ]
+}

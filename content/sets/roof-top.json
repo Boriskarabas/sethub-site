@@ -1,0 +1,104 @@
+{
+  "amenities": [
+    "Restrooms (same floor, around the corner)",
+    "Dressing room",
+    "Freight elevator (open 24/7)",
+    "Natural light",
+    "Wheelchair accessible — let the host know in advance"
+  ],
+  "bookable_hours": "Open 24 hours, 7 days a week",
+  "cancellation_note": "Standard 90-day policy: full refund until 90 days before, 50% between 90 and 14 days, non-refundable under 14 days. Grace period: full refund within 24h of confirmation.",
+  "capacity": 50,
+  "description": "## 10,000 sq ft of open sky in Downtown LA\n\nA raw rooftop canvas above the studio — open sky, city views and natural light. Bring your own build or shoot it as is.\n\n### Good to know\n- We control only what's inside our space, not the building.\n- A team member will walk you through the space at the start of your booking and stays close by if you need anything.\n- Your booking time is your setup **and** cleanup time — please be out by the end to avoid overtime (1.5x rate).\n- Parking: $10 all-day lot at 1023 S Los Angeles St + metered street parking on Main, Olympic, 11th & Los Angeles St.\n- Sound: no complaints — feel free.",
+  "discount_note": "5% off bookings of 8+ hours",
+  "fees": [
+    {
+      "amount": "1.5x hourly rate",
+      "label": "Overtime"
+    },
+    {
+      "amount": "$150",
+      "label": "Last-minute rescheduling"
+    },
+    {
+      "amount": "$100",
+      "label": "Pet fee"
+    },
+    {
+      "amount": "$100",
+      "label": "Alcohol in the space"
+    }
+  ],
+  "gallery": [
+    "/uploads/roof-top/roof-top-01.jpg",
+    "/uploads/roof-top/roof-top-02.jpg",
+    "/uploads/roof-top/roof-top-03.jpg",
+    "/uploads/roof-top/roof-top-04.jpg",
+    "/uploads/roof-top/roof-top-05.jpg",
+    "/uploads/roof-top/roof-top-06.jpg",
+    "/uploads/roof-top/roof-top-07.jpg"
+  ],
+  "instant_book": true,
+  "location": "125 E 11th St, Los Angeles, CA 90015",
+  "min_hours": 2,
+  "price_max": 595,
+  "price_min": 80,
+  "price_unit": "hr",
+  "rules": [
+    "No alcohol in the space.",
+    "Booking time includes setup and cleanup.",
+    "Bathrooms are shared with the building."
+  ],
+  "sets": [
+    "Open rooftop — 10,000 sq ft"
+  ],
+  "sqft": 10000,
+  "sqft_note": "",
+  "tagline": "10,000 sq ft Rooftop",
+  "title": "The RoofTop",
+  "video_url": "",
+  "discount_hours": 8,
+  "discount_pct": 5,
+  "attendee_tiers": [
+    {
+      "label": "1-30 people",
+      "multiplier": 1
+    },
+    {
+      "label": "31-50 people",
+      "multiplier": 1.5
+    }
+  ],
+  "accordions": [
+    {
+      "title": "Parking",
+      "body": "The parking lot is at 1023 S Los Angeles St, Los Angeles ($10 all day). Metered street parking on Main, Olympic, 11th and Los Angeles St. Arrive a little early — finding our door takes a minute the first time."
+    },
+    {
+      "title": "Sound",
+      "body": "No noise complaints — feel free."
+    },
+    {
+      "title": "Space access",
+      "body": "Open 24/7. A team member walks you through the space at the start and stays close by if you need anything. Wheelchair accessible — let the host know in advance."
+    },
+    {
+      "title": "Host rules",
+      "body": "No alcohol. Booking time includes setup and cleanup — overtime is billed at 1.5x the rate."
+    }
+  ],
+  "addons": [
+    {
+      "name": "Projector + Screen",
+      "price": 75,
+      "price_note": "flat fee",
+      "image": "static/img/figma/class-addon-3.jpg"
+    },
+    {
+      "name": "Aputure 300dMII With Stand and Softbox",
+      "price": 30,
+      "price_note": "flat fee",
+      "image": "static/img/figma/class-addon-1.jpg"
+    }
+  ]
+}

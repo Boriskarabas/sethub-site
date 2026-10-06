@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Set Hub</title>
+  <meta name="description" content="Book a creative set in Downtown Los Angeles." />
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Set hub</a>
+      <nav class="nav">
+        <div class="sets-drop" id="setsDrop">
+          <button id="setsBtn" aria-haspopup="true">THE SETS <img src="static/img/figma/arrow-caret-down.svg" alt="" /></button>
+          <div class="drop" id="setsMenu" role="menu"></div>
+        </div>
+        <a href="#booking" class="hide-m">BOOKING</a>
+        <a href="static/admin/" class="hide-m">LOG IN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="detail">
+      <h1 class="mega" id="setTitle">Loading…</h1>
+
+      <div class="hero-media" id="heroMedia">
+        <img id="heroImg" src="" alt="Set hero photo" />
+        <button class="play" id="playBtn" aria-label="Play video"><img src="static/img/figma/play.svg" alt="" /></button>
+      </div>
+      <div class="thumbs" id="thumbs"></div>
+
+      <div class="offer">
+        <h2>What we<br />offer</h2>
+        <div class="prose" id="offerProse"></div>
+      </div>
+
+      <div class="accordions" id="accordions"></div>
+
+      <div class="addons-head">
+        <h2>Add-ons</h2>
+        <div class="addons-nav">
+          <button id="adPrev" aria-label="Scroll left"><img src="static/img/figma/arrow-left.svg" alt="" /></button>
+          <button id="adNext" aria-label="Scroll right"><img src="static/img/figma/arrow-right.svg" alt="" /></button>
+        </div>
+      </div>
+      <div class="addons-row" id="addonsRow"></div>
+
+      <section class="booking-sec" id="booking">
+        <h2><span aria-hidden="true">🔥</span> Booking</h2>
+        <div class="booking-grid">
+          <div id="bkAddons"></div>
+          <aside class="calc" aria-label="Booking calculator">
+            <div class="disc" id="discBar"><span>8+ hour discount</span><span>5% off</span></div>
+            <label>Date and time</label>
+            <input type="date" id="bkDate" />
+            <div class="row2" style="margin-top:10px">
+              <select id="bkFrom"></select>
+              <select id="bkTo"></select>
+            </div>
+            <label class="check"><input type="checkbox" id="bkExtraDay" /> Extend by a day</label>
+            <label>Attendees</label>
+            <select id="bkGuests"></select>
+            <label>Add-ons</label>
+            <div class="sel-addons" id="selAddons"><p style="color:var(--muted);font-size:13px">No add-ons selected yet.</p></div>
+            <div class="price-lines" id="priceLines"></div>
+            <div class="total"><span>TOTAL BEFORE TAXES</span><span class="sum" id="bkTotal">$0.00</span></div>
+            <label>Your name</label>
+            <input type="text" id="bkName" autocomplete="name" placeholder="Name" />
+            <label>Phone or email</label>
+            <input type="text" id="bkContact" autocomplete="email" placeholder="How do we reach you?" />
+            <button class="book-now" id="bookNow"><span>BOOK NOW</span><img src="static/img/figma/arrow-up-right.svg" alt="" /></button>
+            <p class="fine">You won't be charged yet — we confirm availability first.</p>
+          </aside>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="infobar" style="padding-left:0;padding-right:0">
+        <span id="ftLoc">DTLA</span><span id="ftSqft"></span><span>all included</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Photo viewer">
+    <button class="x" id="lbClose" aria-label="Close">×</button>
+    <button class="prev" id="lbPrev" aria-label="Previous">‹</button>
+    <img id="lbImg" src="" alt="Enlarged photo" />
+    <button class="next" id="lbNext" aria-label="Next">›</button>
+  </div>
+
+  <script src="static/js/site.js"></script>
+</body>
+</html>

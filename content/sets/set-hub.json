@@ -1,0 +1,157 @@
+{
+  "amenities": [
+    "Restrooms (shared, down the hall)",
+    "Dressing room",
+    "Freight elevator (open 24/7)",
+    "Wheelchair accessible",
+    "Speakers",
+    "Fans",
+    "Front desk manager on site"
+  ],
+  "bookable_hours": "Open 24 hours, 7 days a week",
+  "cancellation_note": "Full refund for bookings cancelled within 24 hours of booking (applies to bookings at least 3 weeks out). Rescheduling allowed with a fee.",
+  "capacity": 50,
+  "description": "## Your creative hub — from artists to artists\n\n5000 sq ft studio with **16 ready-to-shoot sets**, plus a 10,000 sq ft rooftop (booked separately).\n\n### The sets\nClassroom, Full Metal Jacket Room, All White Cyc (add-on), Graffiti Tunnel, Diner Room, Jeffery Manor Tunnel, Light Tunnel, Trap House Set, LED Cube, Pink/Blue Lounge, Cloud Dancer Set, Orange Tunnel, Electric Chair Tunnel, Spaceship Set.\n\n### Good to know\n- Your booking time is your setup **and** cleanup time — please be out by the end to avoid overtime (1.5x rate).\n- We control what's inside the studio. Bathrooms are shared with the building.\n- The rooftop above the space is a separate listing.\n- Parking: $10 all-day lot at 1023 S Los Angeles St + metered street parking on Main, Olympic, 11th & Los Angeles St.\n- Arrive a little early — finding the door takes a minute the first time.",
+  "discount_note": "5% off bookings of 8+ hours",
+  "fees": [
+    {
+      "amount": "1.5x hourly rate",
+      "label": "Overtime"
+    },
+    {
+      "amount": "$150",
+      "label": "Altering / rearranging sets, ruined sets, lights or equipment"
+    },
+    {
+      "amount": "$100",
+      "label": "Rescheduling"
+    },
+    {
+      "amount": "$150",
+      "label": "Last-minute rescheduling"
+    },
+    {
+      "amount": "$100",
+      "label": "Pet fee"
+    },
+    {
+      "amount": "$50",
+      "label": "Painting the cyc wall"
+    },
+    {
+      "amount": "$100",
+      "label": "Smoking in the space"
+    },
+    {
+      "amount": "$100",
+      "label": "Alcohol in the space"
+    }
+  ],
+  "gallery": [
+    "/uploads/set-hub/set-hub-01.jpg",
+    "/uploads/set-hub/set-hub-02.jpg",
+    "/uploads/set-hub/set-hub-03.jpg",
+    "/uploads/set-hub/set-hub-04.jpg",
+    "/uploads/set-hub/set-hub-05.jpg",
+    "/uploads/set-hub/set-hub-06.jpg",
+    "/uploads/set-hub/set-hub-07.jpg"
+  ],
+  "instant_book": true,
+  "location": "125 E 11th St, Los Angeles, CA 90015",
+  "min_hours": 2,
+  "price_max": 315,
+  "price_min": 99,
+  "price_unit": "hr",
+  "rules": [
+    "No smoking in the space.",
+    "No alcohol in the space.",
+    "Booking time includes setup and cleanup.",
+    "Bathrooms are shared with other spaces in the building.",
+    "The rooftop is booked as a separate space."
+  ],
+  "sets": [
+    "Classroom",
+    "Full Metal Jacket Room",
+    "All White Cyc (add-on)",
+    "Graffiti Tunnel",
+    "Diner Room",
+    "Jeffery Manor Tunnel",
+    "Light Tunnel",
+    "Trap House Set",
+    "LED Cube",
+    "Pink/Blue Lounge",
+    "Cloud Dancer Set",
+    "Orange Tunnel",
+    "Electric Chair Tunnel",
+    "Spaceship Set"
+  ],
+  "sqft": 5000,
+  "sqft_note": "+ 10,000 sq ft rooftop (separate booking)",
+  "tagline": "16 Multi-Set Creative Studio",
+  "title": "Set Hub Collective",
+  "video_url": "",
+  "discount_hours": 8,
+  "discount_pct": 5,
+  "attendee_tiers": [
+    {
+      "label": "1-30 people",
+      "multiplier": 1
+    },
+    {
+      "label": "31-50 people",
+      "multiplier": 1.5
+    }
+  ],
+  "accordions": [
+    {
+      "title": "Parking",
+      "body": "The parking lot is at 1023 S Los Angeles St, Los Angeles ($10 all day). Metered street parking on Main, Olympic, 11th and Los Angeles St. Arrive a little early — finding our door takes a minute the first time."
+    },
+    {
+      "title": "Lighting",
+      "body": "House lighting included. Pro lighting packages available as add-ons — mention your needs when booking."
+    },
+    {
+      "title": "Sound",
+      "body": "Speakers available in the space. No noise complaints here — feel free."
+    },
+    {
+      "title": "Space access",
+      "body": "Open 24/7. Freight elevator on site — keep all doors closed for it to move. Wheelchair accessible; let the host know in advance so we can help."
+    },
+    {
+      "title": "Electrical",
+      "body": "Standard power throughout the studio. Tell us about heavy power needs when booking."
+    },
+    {
+      "title": "Host rules",
+      "body": "No smoking. No alcohol. Your booking time includes setup and cleanup — overtime is billed at 1.5x the rate. Altering or damaging sets: $150."
+    }
+  ],
+  "addons": [
+    {
+      "name": "Aputure 300dMII With Stand and Softbox",
+      "price": 30,
+      "price_note": "flat fee",
+      "image": "static/img/figma/class-addon-1.jpg"
+    },
+    {
+      "name": "Aputure 600d With Stand and Softbox",
+      "price": 50,
+      "price_note": "flat fee",
+      "image": "static/img/figma/class-addon-2.jpg"
+    },
+    {
+      "name": "Aputure 300dMII Light Kit",
+      "price": 30,
+      "price_note": "flat fee",
+      "image": "static/img/figma/class-addon-3.jpg"
+    },
+    {
+      "name": "C-Stand + Grip Kit",
+      "price": 25,
+      "price_note": "flat fee",
+      "image": "static/img/figma/class-addon-4.jpg"
+    }
+  ]
+}
