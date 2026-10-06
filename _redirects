@@ -1,0 +1,3 @@
+# Serve the Decap CMS admin at /admin (files live in /static/admin/)
+/admin /static/admin/index.html 200
+/admin/ /static/admin/index.html 200

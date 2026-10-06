@@ -48,13 +48,13 @@
     }
   ],
   "gallery": [
-    "/uploads/set-hub/set-hub-01.jpg",
-    "/uploads/set-hub/set-hub-02.jpg",
-    "/uploads/set-hub/set-hub-03.jpg",
-    "/uploads/set-hub/set-hub-04.jpg",
-    "/uploads/set-hub/set-hub-05.jpg",
-    "/uploads/set-hub/set-hub-06.jpg",
-    "/uploads/set-hub/set-hub-07.jpg"
+    "/static/uploads/set-hub/set-hub-01.jpg",
+    "/static/uploads/set-hub/set-hub-02.jpg",
+    "/static/uploads/set-hub/set-hub-03.jpg",
+    "/static/uploads/set-hub/set-hub-04.jpg",
+    "/static/uploads/set-hub/set-hub-05.jpg",
+    "/static/uploads/set-hub/set-hub-06.jpg",
+    "/static/uploads/set-hub/set-hub-07.jpg"
   ],
   "instant_book": true,
   "location": "125 E 11th St, Los Angeles, CA 90015",

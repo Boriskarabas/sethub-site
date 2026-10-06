@@ -3,14 +3,17 @@
 # accordions, add-ons, attendee tiers. No code.
 
 backend:
-  name: git-gateway
+  name: github
+  repo: Boriskarabas/sethub-site
   branch: main
-  # Requires Netlify Identity + Git Gateway enabled on the deployed site.
+  base_url: https://sethub-cms-auth.retterium.workers.dev
+  auth_endpoint: auth
+  # Login: open /admin, click "Login with GitHub", authorize the
+  # "Set Hub CMS" OAuth app. Publishing commits straight to main;
+  # Cloudflare Pages redeploys automatically.
 
-local_backend: true
-
-media_folder: "site/static/uploads"
-public_folder: "/uploads"
+media_folder: "static/uploads"
+public_folder: "/static/uploads"
 
 collections:
   - name: "sets"
@@ -18,7 +21,7 @@ collections:
     files:
       - name: "set-hub"
         label: "Set Hub"
-        file: "site/content/sets/set-hub.json"
+        file: "content/sets/set-hub.json"
         fields: &set_fields
           - { label: "Название", name: "title", widget: "string" }
           - { label: "Подзаголовок", name: "tagline", widget: "string" }
@@ -66,9 +69,9 @@ collections:
           - { label: "Отмена брони", name: "cancellation_note", widget: "text", required: false }
       - name: "car-set"
         label: "Car Set"
-        file: "site/content/sets/car-set.json"
+        file: "content/sets/car-set.json"
         fields: *set_fields
       - name: "roof-top"
         label: "RoofTop"
-        file: "site/content/sets/roof-top.json"
+        file: "content/sets/roof-top.json"
         fields: *set_fields

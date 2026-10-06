@@ -12,14 +12,14 @@
   "discount_note": "",
   "fees": [],
   "gallery": [
-    "/uploads/car-set/car-set-01.jpg",
-    "/uploads/car-set/car-set-02.jpg",
-    "/uploads/car-set/car-set-03.jpg",
-    "/uploads/car-set/car-set-04.jpg",
-    "/uploads/car-set/car-set-05.jpg",
-    "/uploads/car-set/car-set-06.jpg",
-    "/uploads/car-set/car-set-07.jpg",
-    "/uploads/car-set/car-set-08.jpg"
+    "/static/uploads/car-set/car-set-01.jpg",
+    "/static/uploads/car-set/car-set-02.jpg",
+    "/static/uploads/car-set/car-set-03.jpg",
+    "/static/uploads/car-set/car-set-04.jpg",
+    "/static/uploads/car-set/car-set-05.jpg",
+    "/static/uploads/car-set/car-set-06.jpg",
+    "/static/uploads/car-set/car-set-07.jpg",
+    "/static/uploads/car-set/car-set-08.jpg"
   ],
   "instant_book": true,
   "location": "125 E 11th St, Los Angeles, CA 90015",

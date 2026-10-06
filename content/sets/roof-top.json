@@ -30,13 +30,13 @@
     }
   ],
   "gallery": [
-    "/uploads/roof-top/roof-top-01.jpg",
-    "/uploads/roof-top/roof-top-02.jpg",
-    "/uploads/roof-top/roof-top-03.jpg",
-    "/uploads/roof-top/roof-top-04.jpg",
-    "/uploads/roof-top/roof-top-05.jpg",
-    "/uploads/roof-top/roof-top-06.jpg",
-    "/uploads/roof-top/roof-top-07.jpg"
+    "/static/uploads/roof-top/roof-top-01.jpg",
+    "/static/uploads/roof-top/roof-top-02.jpg",
+    "/static/uploads/roof-top/roof-top-03.jpg",
+    "/static/uploads/roof-top/roof-top-04.jpg",
+    "/static/uploads/roof-top/roof-top-05.jpg",
+    "/static/uploads/roof-top/roof-top-06.jpg",
+    "/static/uploads/roof-top/roof-top-07.jpg"
   ],
   "instant_book": true,
   "location": "125 E 11th St, Los Angeles, CA 90015",
