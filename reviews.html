@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reviews — Set Hub</title>
+  <meta name="description" content="What guests say about Set Hub on Peerspace." />
+  <link rel="stylesheet" href="static/css/style.css" />
+  <style>
+    .rv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;margin:40px 0 90px}
+    .rv-grid figure{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    .rv-grid img{width:100%;height:auto;display:block}
+    .rv-note{color:var(--muted);font-size:18px;margin:16px 0 8px}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Set hub</a>
+      <nav class="nav">
+        <div class="sets-drop" id="setsDrop">
+          <button id="setsBtn" aria-haspopup="true">THE SETS <img src="static/img/figma/arrow-caret-down.svg" alt="" /></button>
+          <div class="drop" id="setsMenu" role="menu"></div>
+        </div>
+        <a href="book.html" class="hide-m">BOOKING</a>
+        <a href="static/admin/" class="hide-m">LOG IN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1 class="mega" style="text-align:left">Re<br />views</h1>
+    <p class="rv-note">Real reviews from our Peerspace guests — screenshots, unedited.</p>
+    <div class="rv-grid" id="rvGrid"></div>
+  </main>
+
+  <script src="static/js/site.js"></script>
+  <script>
+    fetch("content/reviews.json").then(function (r) { return r.json(); }).then(function (list) {
+      var g = document.getElementById("rvGrid");
+      list.forEach(function (src) {
+        var f = document.createElement("figure");
+        f.innerHTML = '<img src="' + src + '" alt="Peerspace review screenshot" loading="lazy">';
+        g.appendChild(f);
+      });
+      if (!list.length) g.innerHTML = '<p class="rv-note">Reviews are being collected — check back soon.</p>';
+    }).catch(function () {
+      document.getElementById("rvGrid").innerHTML = '<p class="rv-note">Reviews are being collected — check back soon.</p>';
+    });
+  </script>
+</body>
+</html>

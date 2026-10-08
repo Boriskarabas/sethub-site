@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book a set — Set Hub</title>
+  <meta name="description" content="Book the 16 Set Studio, the Rooftop, or the Car Set in DTLA." />
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Set hub</a>
+      <nav class="nav">
+        <div class="sets-drop" id="setsDrop">
+          <button id="setsBtn" aria-haspopup="true">THE SETS <img src="static/img/figma/arrow-caret-down.svg" alt="" /></button>
+          <div class="drop" id="setsMenu" role="menu"></div>
+        </div>
+        <a href="book.html" class="hide-m">BOOKING</a>
+        <a href="static/admin/" class="hide-m">LOG IN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap book-page">
+    <h1 class="mega">Book<br />a set</h1>
+    <p class="book-sub">Pick a space, choose date &amp; time — pay online in a minute.</p>
+    <div id="setBlocks"></div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="infobar" style="padding-left:0;padding-right:0">
+        <span>DTLA</span><span>16500 sq ft</span><button id="watchGallery" type="button">watch gallery</button>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Photo viewer">
+    <button class="x" id="lbClose" aria-label="Close">×</button>
+    <button class="prev" id="lbPrev" aria-label="Previous">‹</button>
+    <img id="lbImg" src="" alt="Enlarged photo" />
+    <button class="next" id="lbNext" aria-label="Next">›</button>
+  </div>
+
+  <script src="static/js/site.js"></script>
+  <script src="static/js/book.js"></script>
+</body>
+</html>

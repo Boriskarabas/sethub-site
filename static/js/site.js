@@ -81,7 +81,11 @@
   function initIndex() {
     var pill = $("bookPill");
     if (pill) pill.addEventListener("click", function () {
-      location.href = "set.html?set=set-hub";
+      location.href = "book.html";
+    });
+    var rp = $("reviewsPill");
+    if (rp) rp.addEventListener("click", function () {
+      location.href = "reviews.html";
     });
     var wg = $("watchGallery");
     if (wg) wg.addEventListener("click", function () {
@@ -177,6 +181,9 @@
 
     // footer info
     $("ftSqft").textContent = d.sqft ? Number(d.sqft).toLocaleString("en-US") + " sq ft" : (d.sqft_note || "");
+
+    var fbb = $("fullBookBtn");
+    if (fbb) fbb.href = "book.html?set=" + slug;
 
     renderBooking(d);
   }
