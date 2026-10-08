@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Gallery — Set Hub</title>
+  <meta name="description" content="Every set, every angle — zoom through the Set Hub photo library." />
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Set hub</a>
+      <nav class="nav">
+        <div class="sets-drop" id="setsDrop">
+          <button id="setsBtn" aria-haspopup="true">THE SETS <img src="static/img/figma/arrow-caret-down.svg" alt="" /></button>
+          <div class="drop" id="setsMenu" role="menu"></div>
+        </div>
+        <a href="book.html" class="hide-m">BOOKING</a>
+        <a href="static/admin/" class="hide-m">LOG IN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap gal-page">
+    <div class="gal-bar">
+      <div class="gal-filters" id="galFilters"></div>
+      <div class="gal-zoom">
+        <button id="zoomOut" aria-label="Zoom out">−</button>
+        <input type="range" id="zoomRange" min="2" max="8" step="1" value="5" aria-label="Grid zoom" />
+        <button id="zoomIn" aria-label="Zoom in">+</button>
+      </div>
+    </div>
+    <p class="gal-hint">Scroll to browse · <kbd>Ctrl</kbd> + scroll or pinch to zoom · click a photo to open it</p>
+    <div class="zgrid" id="zgrid"></div>
+  </main>
+
+  <div class="glightbox" id="glb" role="dialog" aria-label="Photo viewer">
+    <button class="x" id="glbClose" aria-label="Close">×</button>
+    <button class="prev" id="glbPrev" aria-label="Previous">‹</button>
+    <img id="glbImg" src="" alt="Enlarged photo" />
+    <button class="next" id="glbNext" aria-label="Next">›</button>
+  </div>
+
+  <script src="static/js/site.js"></script>
+  <script src="static/js/gallery.js"></script>
+</body>
+</html>

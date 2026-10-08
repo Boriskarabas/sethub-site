@@ -89,9 +89,7 @@
     });
     var wg = $("watchGallery");
     if (wg) wg.addEventListener("click", function () {
-      var imgs = document.querySelectorAll(".mosaic img");
-      state.gallery = Array.prototype.map.call(imgs, function (im) { return im.getAttribute("src"); });
-      if (state.gallery.length) openLB(0);
+      location.href = "gallery.html";
     });
   }
 
