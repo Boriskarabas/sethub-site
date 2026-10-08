@@ -261,6 +261,14 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     if (!$("setBlocks")) return;
+    var paid = new URLSearchParams(location.search).get("paid");
+    if (paid) {
+      var note = document.createElement("div");
+      note.className = "pay-success";
+      note.innerHTML = "<h2>Payment received ✓</h2><p>Thanks! We've got your booking request and will confirm shortly by email.</p>";
+      var main = document.querySelector(".book-page");
+      main.insertBefore(note, main.firstChild);
+    }
     var loads = [getJSON("content/pricing.json")].concat(ORDER.map(function (s) {
       return getJSON("content/sets/" + s + ".json").catch(function () { return null; });
     }));

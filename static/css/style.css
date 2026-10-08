@@ -232,3 +232,6 @@ footer .infobar{padding-bottom:10px}
   .addon-grid{grid-template-columns:repeat(auto-fill,minmax(128px,1fr))}
   .logo{font-size:28px}
 }
+.pay-success{background:#18200a;border:1px solid var(--accent);border-radius:20px;padding:32px;margin-bottom:32px}
+.pay-success h2{font-size:30px;margin-bottom:8px}
+.pay-success p{color:var(--muted)}
